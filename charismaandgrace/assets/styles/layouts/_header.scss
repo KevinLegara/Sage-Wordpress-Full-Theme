@@ -1,0 +1,154 @@
+/*-------------------------------------------------------*/
+/*  HEADER AREA
+/*-------------------------------------------------------*/
+
+ul.social-icons {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	li {
+		display: inline;
+		a {
+			color: $base-color;
+			padding-right: 20px;
+			&:hover,
+			&:focus {
+				color: $pink;
+			}
+		}
+	}
+}
+header {
+	&.pgheader {
+		padding: 15px 0 0;
+		.top-navbar {
+			.search-box{
+			    font-family: $secondary-font;
+				text-transform: uppercase;
+				color: $base-color;
+				label{
+					line-height: 30px;
+					padding-right: 6px;
+					font-weight: 700;
+				}
+				input{
+					width: 175px;
+					height: 30px;
+					padding: 5px;
+					background: #ececec;
+					border: none;
+				}
+				.search-btn {
+					border: none;
+					background: transparent;
+					padding: 0;
+					i{
+						line-height: 30px;
+						padding-left: 4px;
+						color: $base-color;
+					}
+				}
+			}
+		}
+		.header-nav {
+			padding: {
+				top: 11px;
+				bottom: 7px;
+			}
+			background-color: $dirtywhite-bg;
+			.logo{
+				margin-top:23px;
+			}		
+			.tagline{
+				margin-top: 15px;
+				h2{
+					font-family: $base-font;
+					font-size: 25px;
+					font-style: italic;
+					color: $dark-color;
+					text-align: right;
+				}
+			}
+			.navbar {
+				padding-right: 0;
+				.navbar-brand {
+					color: $base-color;
+				}
+				.navbar-toggler {
+					border: 1px solid $pink;
+    				color: $pink;
+				}
+				.menu-primary-menu-container {
+					ul li {
+						a {
+							font-family: $secondary-font;
+							color: $dark-color;
+							text-transform: uppercase;
+							&:hover,
+							&:focus{
+								color: $pink;
+							}
+						}
+						&.active a,
+						&.current-menu-ancestor.current-menu-parent a{
+							color: $pink;
+						}
+						&.nav-item+.nav-item {
+							margin-left: 25px;
+						}
+						&.dropdown {
+							&:hover .dropdown-menu {
+							    display: block;
+							}
+							.dropdown-menu {
+								a {
+									color: $base-color; 
+									font-size: 14px;
+									background-color: transparent;
+									&.dropdown-item.active {
+										background-color: transparent;
+										color: pink;
+									}
+									&:hover {
+										color: pink;	
+									}
+								}
+								margin-top: 0;
+								.sub-menu {
+								    left: 100%;
+								    position: absolute;
+								    top: 0;
+								    visibility: hidden;
+								    margin-top: -1px;
+								    &:before {
+									    border-bottom: 7px solid transparent;
+									    border-left: none;
+									    border-right: 7px solid rgba(0, 0, 0, 0.2);
+									    border-top: 7px solid transparent;
+									    left: -7px;
+									    top: 10px;
+									}
+									&:after {
+									    border-top: 6px solid transparent;
+									    border-left: none;
+									    border-right: 6px solid #fff;
+									    border-bottom: 6px solid transparent;
+									    left: 10px;
+									    top: 11px;
+									    left: -6px;
+									}
+
+								}
+								li:hover .sub-menu {
+								    visibility: visible;
+								}
+							}
+
+						}
+
+					}
+				}
+			}
+		}
+	}
+}

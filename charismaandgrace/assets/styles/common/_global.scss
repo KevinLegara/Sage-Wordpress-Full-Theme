@@ -1,0 +1,13 @@
+
+body{
+    font-family: $base-font;
+    font-size: 14px;	
+}
+p{
+	color: $base-color;
+	font-size: 15px;
+}
+a:focus, a:hover {
+	color: $base-color;
+    text-decoration: underline;
+}

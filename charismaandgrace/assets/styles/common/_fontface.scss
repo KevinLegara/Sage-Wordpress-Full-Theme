@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Zapfino Forte LT';
+    src: url('#{$font-root}ZapfinoForteLT-One.eot');
+    src: url('#{$font-root}ZapfinoForteLT-One.eot?#iefix') format('embedded-opentype'),
+        url('#{$font-root}ZapfinoForteLT-One.woff') format('woff'),
+        url('#{$font-root}ZapfinoForteLT-One.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latobold';
+    src: url('#{$font-root}lato-bold-webfont.woff2') format('woff2'),
+         url('#{$font-root}lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latolight';
+    src: url('#{$font-root}lato-light-webfont.woff2') format('woff2'),
+         url('#{$font-root}lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latoregular';
+    src: url('#{$font-root}lato-regular-webfont.woff2') format('woff2'),
+         url('#{$font-root}lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('#{$font-root}playfairdisplay-regular-webfont.woff2') format('woff2'),
+         url('#{$font-root}playfairdisplay-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

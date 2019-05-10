@@ -1,0 +1,125 @@
+.page-sidebar {
+  .widget {
+     display: -webkit-flex;
+     display: flex;
+     -webkit-flex-direction: column;
+     flex-direction: column;
+     -webkit-align-items: center;
+     align-items: center;
+     -webkit-justify-content: center;
+     justify-content: center;
+     padding-bottom: 20px;
+     h3 {
+          margin: 0 0 30px;
+          padding: 0;
+          font-family: latolight;
+          font-size: 24px;
+          color: #424143;
+          text-transform: uppercase;
+          text-align: center;
+      }
+     .details{
+        margin: 20px 0;
+        text-align: center;
+        max-width: 250px;
+        width: 100%;
+      }
+      &.widget_socialmedia_widget {
+        .details {
+          margin-top: 0;
+        }
+        ul.social-icons{
+            display: flex;
+            justify-content: center;
+            li a{
+              font-size: 20px;
+            }
+        }
+      }
+
+      &.APTFIN_by_TAP {
+        padding-bottom: 40px;
+      }
+
+      &.popular-posts {
+        .popularpost-entry{
+          margin-bottom: 20px;
+          .post-thumb {
+            padding-right: 20px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .post-desc {
+            padding-left: 0;
+            width: 146px;
+            .post-date{
+              font-size: 12px;
+              font-family: $primary-font;
+            }
+            .post-title {
+              a {
+                font-size: 16px;
+                color: $base-color;
+              }
+            }
+          }
+        }
+      }
+      &.widget_categories {
+          font-family: latolight;
+          & > ul {
+            list-style: none;
+            text-transform: uppercase;
+            padding-left: 0;
+            & > li {
+              padding-bottom: 10px;
+              a {
+                color: #424143;
+              }
+            }
+            ul {
+              text-transform: none;
+              li a{
+                color: $base-color;    
+              }
+            }
+          }
+          li.current-cat > a {
+            color: $pink;
+          }
+          a {
+            color: $base-color;
+          }
+      }
+  }
+}
+
+/*-------------------------------------------------------*/
+/*  SHOP PAGE SIDEBAR
+/*-------------------------------------------------------*/
+.shop-sidebar {
+  .shop-sidebar-title {
+    font-size: 24px;
+    font-family: $primary-font;
+    text-transform: uppercase;
+  }
+  ul.category-links {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 10px;
+      font-size: 18px;
+      &.active {
+        a {
+          color: $pink;
+        }
+      }
+      a {
+        color: $base-color;
+      }
+    }
+  }
+}
